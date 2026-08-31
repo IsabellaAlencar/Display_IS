@@ -61,6 +61,31 @@
 }
 
 .color-section__link--active:hover{
-    
+    /* Alterar Formato do elemento */
+    transform: scale(1.05);
+}
+
+.color-section__link:not(.color-section__link--active):hover{
+    color: var(--ui-text-title);
+    background-color: var(--ui-link-hover-bg);
+}
+
+.color-section__bar{
+
+    /* faz com que as 6 colunas dividam igualmente o espaço */
+    flex-grow: 1;
+    height: 100%;
+
+    /* Efeito de transição suave */
+    transition: transform 0.25 ease;
 
 }
+
+.color-section__bar:hover {
+    transform: scaleX(1.02);
+    /* posicionamento do elemento no eixo z (pilha) */
+    z-index: 10;
+    box-shadow: 0 0 30px rgba(94, 40, 105);
+}
+
+
