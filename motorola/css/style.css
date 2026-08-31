@@ -5,47 +5,51 @@
 
 }
 
-
-
-.imagem{
-
-    width: 100%;
-    display: block;
-}
-
-
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-
-.conteudo_principal{
-    width: 100%;
+.conteudo__principal{
+    height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
 }
 
+.conteudo__principal sup{
+    font-size: 10px;
+    color: darkorchid;
 
-.direito {
-    width: 40%;
 }
 
+.esquerdo{
+    width: 300px;
+    height: 450px;
+}
+
+.esquerdo{
+    width: 650px;
+    height: 450px;
+}
+
+.conteudo-principal--direito--descrição{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid;
+    height: 150px;
+}
 
 
 .esquerdo{
-    width: 60%;
-    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid;
+    height: 150px;
+
 }
 
-
-
-.titulo__esquerdo h1{
-
-    font-size: 40px;
-    font-weight:  400;
-    line-height: 1.1;
-
+.conteudo-direito-carregador--carregador h2{
+    margin-bottom: 15px;
 }
 
 
