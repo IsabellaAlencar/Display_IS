@@ -143,3 +143,38 @@ html{
     font-family: 'Times New Roman';
     color: #F7D1E0;
 }
+
+.faq{
+    width: 50%;
+    border: 2px solid;
+    margin-left: 25px;
+    
+}
+
+.faq details{
+    background: #e97daa;
+    color: #fdfdfd;
+    line-height: 40px;
+    padding: 10px 20px;
+
+}
+
+.faq summary{
+    background: #af587b;
+    border-radius: 12px;
+    list-style: none;
+    padding-left: 10px;
+
+}
+
+
+.faq summary:hover{
+    cursor: pointer;
+    
+}
+
+.faq p{
+    color: #af587b;
+    line-height: 25px;
+}
+
