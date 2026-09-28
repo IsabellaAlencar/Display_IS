@@ -8,16 +8,25 @@
 
     <!-- Estilos da página -->
     <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
         body {
             background-color: blue;
         }
+
         @media (min-width: 768px){
             body{
                 background-color: cornflowerblue;
             }
         }
         
-        @media (min-width: 480px)   {
+        @media (max-width: 480px)   {
             body {
                 background-color: lightgreen;
             }
@@ -26,7 +35,12 @@
 </head>
 
 <body>
-
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
 </body>
 
 </html>
