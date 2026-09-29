@@ -1,71 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de @Media</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 
-    <!-- Estilos da página -->
+    <!-- estilo da pagina -->
+    <!-- () são os parametros 
+    @media= tela a partir de 480px-->
+    <!--break point 
+    sempre coloque as medias do menor para o maior  -->
     <style>
-
-        *{
-            box-sizing: border-box;
-            margin: 0;
+        * {
+            margin-top: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
 
-       
+
 
         h1{
             text-align: center;
-            margin-bottom: 20px;
+            margin: 20px;
+
         }
 
-
-        
-        .container{
+        .conteiner {
             display: flex;
             gap: 15px;
             justify-content: center;
             flex-wrap: wrap;
         }
 
-
-        .box{
+        .box {
             width: 100%;
             max-width: 400px;
             height: 200px;
             background-color: rgb(0, 0, 0);
         }
-        
         .container-position{
             margin-top: 10px;
             width: 100%;
             height: 600px;
-            border: 2px solid blueviolet;
-            position: relactive;
+            border: 2px solid rgb(20, 255, 255);
+            position: relative;
         }
-
 
         .filho-tamanho{
             position: absolute;
             width: 200px;
             height: 200px;
-            background-color: rgb(97, 97, 172);
+            background-color: rgb(247, 74, 189);
         }
-
-
         .container-position__filho01{
             top: 0;
-            right: 0;
+            left: 0;
         }
 
-
         .container-position__filho02{
+
             top: 0;
             right: 0;
+
         }
 
         .container-position__filho03{
@@ -73,72 +73,67 @@
             left: 0;
         }
 
-
-
         .container-position__filho04{
             bottom: 0;
             right: 0;
         }
 
         .whats{
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
-            background-color: rgb(42, 173, 3);
+            background-color: rgb(236, 148, 89);
             border: 2px solid #fff;
-            box-shadow: 1px 2px 2px #fff;
+            box-shadow: 1px 2px 7px  2px #fff;
             position: fixed;
-            right: 0;
-            bottom: 0;
+            right:60px ;
+            bottom:45px ;
         }
-
 
         .whats img{
-            width: 75;
-            left: 75;
+             width: 75px;
+            height: 75px;
 
         }
 
-
-        @media (min-width: 1270px){
-            body{
-                background-color: rgb(169, 61, 179);
-            }
-
-            box{
-                width: 45%;
-                max-width: 600px;
-            }
-        }
-        
-        @media (max-width: 854px)   {
-            body {
-                background-color: rgb(120, 42, 209);
-
-            box{
-                width: 300px;
-            }
-            }
-        }
-
-         body {
+        /* Base style for mobile devices 20px */
+        body {
             padding: 20px;
-            background-color: blue;
+            background-color: rgb(245, 56, 182);
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: Arial,sans-serif;
             height: 300vh;
         }
 
+       
+
+        /* For devices with a minimum width of 768px (Medium) */ 
+        @media screen and (min-width: 871px) {
+            body {
+                background-color: rgb(153, 0, 255);
+                color: black;
+            }
+        }
+
+         /* For devices with a minimum  width of 992px (Large)*/
+        @media screen and (min-width: 1286px) {
+            body {
+                background-color: rgb(241, 128, 198);
+                color: white;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <h1>Testes com CSS @Media Query</h1>
-    <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+    <h1>Teste com CSS @Media Query</h1>
+    <div class="conteiner">
+
+
+        <div class="box"> </div>
+        <div class="box"> </div>
+        <div class="box"> </div>
+        <div class="box"> </div>
     </div>
 
     <div class="container-position">
@@ -146,10 +141,10 @@
         <div class="container-position__filho02 filho-tamanho"></div>
         <div class="container-position__filho03 filho-tamanho"></div>
         <div class="container-position__filho04 filho-tamanho"></div>
-
     </div>
     <div class="whats">
-        <img src="./css/apple.png" alt="Logo Whatssap">
+
+        <img src="./css/apple.png" alt="Logo do whatsapp">
 
     </div>
 </body>
