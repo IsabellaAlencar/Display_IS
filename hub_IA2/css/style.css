@@ -79,4 +79,18 @@
 }
 
 
+.section-ia__container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.section-ia--reverse .section-ia__container {
+    flex-direction: row-reverse;
+}
+
+
 
