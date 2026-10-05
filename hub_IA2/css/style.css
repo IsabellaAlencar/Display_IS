@@ -92,5 +92,9 @@
     flex-direction: row-reverse;
 }
 
+.section-ia__content{
+    flex: 1;
+}
+
 
 
