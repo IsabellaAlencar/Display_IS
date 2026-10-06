@@ -97,6 +97,11 @@
                 padding: 6px;
         }
 
+        .nav_link{
+        font-size: 1.3rem;/13 px/
+        padding: 6px 12px;
+}
+
         .section-ia,
         .faq {
                 height: auto;
@@ -135,6 +140,12 @@
                 font-size: 2.4rem;
         }
 
+}
+
+@media (min-width: 1024px) {
+        .section-ia__container{
+                max-width: 1100px;
+        }
 }
 
 
